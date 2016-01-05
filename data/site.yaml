@@ -1,0 +1,22 @@
+sections:
+  -
+    name: 'home'
+    link:
+      - 'Home'
+      - '/index.html'
+  -
+    name: 'research'
+    link:
+      - 'Research'
+      - '/research.html'
+  -
+    name: 'teaching'
+    link:
+      - 'Teaching'
+      - '/teaching.html'
+  -
+    name: 'computing'
+    link:
+      - 'Computing'
+      - '/computing.html'
+

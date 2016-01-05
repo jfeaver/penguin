@@ -1,0 +1,4 @@
+%ul
+  - data.site.sections.each do |section|
+    %li{ class: (active_section?(current_page, section) ? 'active' : nil) }= link_to(*section.link)
+

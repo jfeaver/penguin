@@ -1,3 +1,5 @@
+require 'lib/helpers'
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -18,6 +20,8 @@ page '/*.txt', layout: false
 
 # General configuration
 
+activate :directory_indexes
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -27,12 +31,7 @@ end
 # Helpers
 ###
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers Penguin::Helpers
 
 # Build-specific configuration
 configure :build do
