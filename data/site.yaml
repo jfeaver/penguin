@@ -1,21 +1,17 @@
 sections:
-  -
-    name: 'home'
+  home:
     link:
       - 'Home'
       - '/index.html'
-  -
-    name: 'research'
+  research:
     link:
       - 'Research'
       - '/research.html'
-  -
-    name: 'teaching'
+  teaching:
     link:
       - 'Teaching'
       - '/teaching.html'
-  -
-    name: 'computing'
+  computing:
     link:
       - 'Computing'
       - '/computing.html'
