@@ -1,3 +1,16 @@
 @charset "utf-8";
 @import "normalize";
 
+body {
+  font-family: 'Cabin';
+}
+
+#logo {
+  font-family: 'Happy Monkey';
+  text-transform: lowercase;
+}
+
+#main-navigation {
+  font-family: 'Poiret One';
+}
+
