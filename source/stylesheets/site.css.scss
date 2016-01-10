@@ -1,16 +1,58 @@
 @charset "utf-8";
-@import "normalize";
+
+// Colors
+$secondary: #7fa998;
+$subtle: #ccc;
+$main-font: black;
+
+// Layout
+
+body > .container {
+  max-width: 900px;
+}
 
 body {
   font-family: 'Cabin';
 }
 
 #logo {
+  text-align: center;
   font-family: 'Happy Monkey';
   text-transform: lowercase;
+  font-size: 45px;
+  margin: 45px 0;
+  color: $secondary;
 }
 
 #main-navigation {
+  border-top: 1px dashed $subtle;
+  border-bottom: 1px dashed $subtle;
   font-family: 'Poiret One';
+  font-size: 18px;
+  ul {
+    text-align: center;
+    margin: 9px 0;
+    padding: 0;
+    li {
+      display: inline;
+      list-style-type: none;
+      text-transform: uppercase;
+
+      a {
+        color: $main-font;
+        margin: 10px;
+      }
+
+      &.active a { color: $secondary }
+
+      &:after {
+        content: "\2022";
+        color: $subtle;
+      }
+    }
+    li:last-child:after {
+      content: none;
+    }
+  }
 }
 

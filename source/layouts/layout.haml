@@ -7,12 +7,14 @@
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Middleman"
     %link{:href => "//fonts.googleapis.com/css?family=Happy+Monkey|Poiret+One|Cabin", :rel => "stylesheet", :type => "text/css"}/
+    %link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")/
     = stylesheet_link_tag :site
     = javascript_include_tag :all
   %body{:class => page_classes}
-    %header
-      #logo
-        Amy Feaver
-      #main-navigation= partial 'main_navigation'
-    = yield
+    .container
+      %header
+        #logo
+          Amy Feaver
+        #main-navigation= partial 'main_navigation'
+      = yield
 
