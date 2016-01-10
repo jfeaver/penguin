@@ -1,0 +1,37 @@
+addition_tables:
+  - docx
+  - pdf
+base_3_worksheet:
+  - pdf
+  - tex
+divisibility_palindromic_numbers:
+  - pdf
+  - tex
+geometry_true_or_false:
+  - docx
+  - pdf
+normal_curves_with_ducks:
+  - pdf
+  - tex
+order_of_operations_four_fours:
+  - pdf
+  - tex
+permutationscombinations:
+  - pdf
+  - tex
+polygons:
+  - docx
+  - pdf
+scientific_notation_paper_folding:
+  - pdf
+  - tex
+stats_with_ducks:
+  - pdf
+  - tex
+the_sieve_of_eratosthenes:
+  - pdf
+  - tex
+understanding_place_values:
+  - pdf
+  - tex
+
