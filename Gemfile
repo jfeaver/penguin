@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 ruby '2.3.0'
 
 # Middleman Gems
-gem 'middleman', path: '/Users/nathan/gems/community/middleman' #'>= 4.0.0'
+gem 'middleman' #, path: '/Users/nathan/gems/community/middleman' #'>= 4.0.0'
 gem 'middleman-livereload'
 
 gem 'pry'
