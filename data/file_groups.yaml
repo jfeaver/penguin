@@ -1,62 +1,63 @@
-elementary_ed:
-  addition_tables:
-    title: 'Addition Tables'
-    exts:
-      - docx
-      - pdf
-  base_3_worksheet:
-    title: 'Base 3 Worksheet'
-    exts:
-      - pdf
-      - tex
-  divisibility_palindromic_numbers:
-    title: 'Divisibility (Palindromic Numbers)'
-    exts:
-      - pdf
-      - tex
-  geometry_true_or_false:
-    title: 'Geometry True or False'
-    exts:
-      - docx
-      - pdf
-  normal_curves_with_ducks:
-    title: 'Normal Curves with Ducks'
-    exts:
-      - pdf
-      - tex
-  order_of_operations_four_fours:
-    title: 'Order of Operations (Four Fours)'
-    exts:
-      - pdf
-      - tex
-  permutationscombinations:
-    title: 'Permutations and Combinations'
-    exts:
-      - pdf
-      - tex
-  polygons:
-    title: 'Polygons'
-    exts:
-      - docx
-      - pdf
-  scientific_notation_paper_folding:
-    title: 'Scientific Notation (Paper Folding)'
-    exts:
-      - pdf
-      - tex
-  stats_with_ducks:
-    title: 'Stats with Ducks'
-    exts:
-      - pdf
-      - tex
-  the_sieve_of_eratosthenes:
-    title: 'The Sieve of Eratosthenes'
-    exts:
-      - pdf
-      - tex
-  understanding_place_values:
-    title: 'Understanding Place Values'
-    exts:
-      - pdf
-      - tex
+teaching:
+  elementary_ed:
+    addition_tables:
+      title: 'Addition Tables'
+      exts:
+        - docx
+        - pdf
+    base_3_worksheet:
+      title: 'Base 3 Worksheet'
+      exts:
+        - pdf
+        - tex
+    divisibility_palindromic_numbers:
+      title: 'Divisibility (Palindromic Numbers)'
+      exts:
+        - pdf
+        - tex
+    geometry_true_or_false:
+      title: 'Geometry True or False'
+      exts:
+        - docx
+        - pdf
+    normal_curves_with_ducks:
+      title: 'Normal Curves with Ducks'
+      exts:
+        - pdf
+        - tex
+    order_of_operations_four_fours:
+      title: 'Order of Operations (Four Fours)'
+      exts:
+        - pdf
+        - tex
+    permutationscombinations:
+      title: 'Permutations and Combinations'
+      exts:
+        - pdf
+        - tex
+    polygons:
+      title: 'Polygons'
+      exts:
+        - docx
+        - pdf
+    scientific_notation_paper_folding:
+      title: 'Scientific Notation (Paper Folding)'
+      exts:
+        - pdf
+        - tex
+    stats_with_ducks:
+      title: 'Stats with Ducks'
+      exts:
+        - pdf
+        - tex
+    the_sieve_of_eratosthenes:
+      title: 'The Sieve of Eratosthenes'
+      exts:
+        - pdf
+        - tex
+    understanding_place_values:
+      title: 'Understanding Place Values'
+      exts:
+        - pdf
+        - tex
 

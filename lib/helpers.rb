@@ -11,5 +11,11 @@ module Penguin::Helpers
     content ||= File.basename(file)
     link_to(content, file)
   end
+
+  def file_groups(directory)
+    directory.split('/').reduce(data.file_groups) do |grouping, directory|
+      grouping[directory]
+    end
+  end
 end
 
