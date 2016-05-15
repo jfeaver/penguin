@@ -1,0 +1,516 @@
+
+\documentclass{article}
+
+\usepackage{fullpage}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{Large}
+
+\noindent Binary and Hexadecimal
+
+\end{Large}
+
+\vspace{0.5in}
+
+\noindent\textbf{Background}
+
+\vspace{0.3in}
+
+Before discussing binary, hex and numbers in other bases, it is helpful to review rules of exponentiation. Remember that $a^n$ (``$a$ to the power of $n$")is equal to $a$ multiplied by itself $n$ times. For example, \newline $5^3=5*5*5=125$.
+
+\vspace{0.2in}
+
+We begin with a brief review of powers of 2:
+\begin{itemize}
+\item[] $2^0 = 1$ 
+\item[] $2^1 = 2$ 
+\item[] $2^2 = 2*2 = 4$ 
+\item[] $2^3 = 2*2*2 = 8$ 
+\item[] $2^4 = 2*2*2*2 = 16$ 
+\item[] $2^5 = 2*2*2*2*2 = 32$ 
+\end{itemize}
+
+\vspace{0.2in}
+
+When working with numbers in other bases, and in computer science in general, you should (eventually - it takes time!) be comfortable using properties of exponents.  Below is a list of some of the most important properties you need to know when working with exponenents.
+\begin{itemize}
+\item[] $a^{-1}=1/a$
+\item[] $a^b*a^c = a^{b+c}$
+\item[] $a^b/a^c = a^{b-c}$
+\item[] $a^c*b^c = (ab)^c$
+\item[] $\left(a^b\right)^c=a^{bc}$.
+\end{itemize}
+
+\vspace{0.2in}
+
+Here are three warm-up exercises to get you started. I won't provide the answers for these exercises, all three should give you the same answer, so this will help you know if you're on the right track.
+
+
+\begin{enumerate}
+
+\item Simplify the expression $a^9/a^2$.
+
+\item Simplify the expression $\left(\frac{1}{a}\right)^{-7}$
+
+\item Simplify the expression $\left(a^2\right)^3a$
+
+\end{enumerate}
+
+
+\newpage
+
+\noindent\textbf{Computers and Binary Numbers}
+
+\vspace{0.3in}
+
+Because computers are comprised of electronic circuits, these circuits can only exist in one of two states: `on' or `off'. 
+
+\vspace{0.2in}
+
+If a transistor is on then the computer reads it as a \rule{1in}{.01in}.
+
+\vspace{0.2in}
+
+If it is off it is read as a \rule{1in}{.01in}.
+
+\vspace{0.2in}
+ 
+ Although, it's a bit more complicated than `on' or `off'. What happens when you switch a transistor from being on (and thus having electricity flowing through it) to off (no electricity)? The transistor, after being turned `off' still has residual electricity in it. So a computer reads something as `on' if it has a good amount of electricity in it, and `off' if it only has residual traces of electricity.
+ 
+ \vspace{0.2in}
+
+Other devices that your computer uses do something similar for memory storage. Hard drives use magnetism to indicate 0 or 1. CD's are a series of dark and light/reflective spots. On a CD,
+
+\vspace{0.2in}
+
+your computer reads the dark spots as \rule{1in}{.01in}, 
+
+\vspace{0.2in}
+
+and the reflective spots as \rule{1in}{.01in}.
+
+\vspace{0.2in}
+
+Because computers are built to only really read zeros and ones, computers have to work in binary. They can't work directly in base 10 like we do, because base 10 requires a total of 10 digits: 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. On/off switches, however, do not have 10 different states.
+
+
+\vspace{0.5in}
+
+\noindent\textbf{Converting To and From Binary}
+
+\vspace{0.3in}
+
+It is best to explain numbers in other bases by drawing analogies to our own number system: decimal, or base 10. It is called base 10 because we have 10 digits (0-9), but in base 2, we only have two digits: 0 and 1. So when we're counting in base 10 we start `0, 1, 2, 3, 4, 5, 6, 7, 8, 9...' and then run out of digits! So when we run out of digits, we add another column, the tens place, and continue on: `10, 11, 12...'.  We continue and eventually get to 99. At 99, we've run out of 2-digit numbers, so we add another column: `100, 101, 102...'.
+
+\vspace{0.2in} 
+
+Now, let's connect this to base 2, by counting using \textit{only} 0's and 1's, and following the rule that once we run out of digits, we add a new column. Obviously, we will run out of digits much sooner.
+
+\vspace{0.3in}
+
+\rule{1in}{.01in}, \rule{1in}{.01in}  (we've run out of digits! so add a column!)
+
+\vspace{0.3in}
+
+ \rule{1in}{.01in}, \rule{1in}{.01in} (again, we've run out of digits! so add a column!)
+ 
+ \vspace{0.3in}
+ 
+ \rule{1in}{.01in}, \rule{1in}{.01in},  \rule{1in}{.01in}, \rule{1in}{.01in}  \newline
+ 
+ 
+
+\newpage 
+
+Another thing to notice about base 10 is that all of the place values are powers of ten (``the tens place", ``the hundreds place", etc.) Thus we can break any decimal number into its base 10 expansion:
+
+\vspace{0.2in}
+
+
+\[724 = 7\cdot 100 + 2\cdot 10 + 4\cdot 1,\]
+
+\noindent meaning 724 is equal to 7 groups of 100, 2 groups of 10 and 4 groups of 1. Alternatively, since all place values are powers of 10, we can write the base 10 expansion using 10's and exponents:
+
+\vspace{0.2in}
+
+\[724 = \rule{3in}{.01in}.\]
+
+\vspace{0.2in} 
+
+As another example, let's find a base 10 expansion of 81.234 using the exponent notation:
+
+\vspace{0.2in}
+
+\[81.234 = \rule{4in}{.01in}.\]
+
+
+\vspace{0.2in}
+
+Similarly, we can write binary (base 2) numbers using a place-value expansion to understand their values. Take, for example, 101 in base 2. Its place values are now powers of 2 instead of powers of 10. Let's write out its base 2 expansion:
+
+\vspace{0.2in}
+
+\[101 = \rule{3in}{.01in}.\]
+
+\vspace{0.2in} 
+
+Let's do a couple more:
+
+\vspace{0.2in}
+
+\[10001 = \rule{3in}{.01in}\]
+
+\vspace{0.2in} 
+
+\[1.011 = \rule{3in}{.01in}\]
+
+\vspace{0.2in} 
+
+Once we know how to find a place-value expansion of a binary number, we can add it up and find the equivalent number in base 10.  So we have,
+
+\vspace{0.2in}
+
+\[101 = \rule{2in}{.01in}.\]
+
+\vspace{0.2in}
+
+\[10001 = \rule{2in}{.01in}\]
+
+\vspace{0.2in} 
+
+\[1.011 = \rule{2in}{.01in}\]
+
+\newpage
+
+Going from base 10 to binary is a bit trickier, but is certainly something you can do once you understand how to convert from binary to base 10. To convert from binary to base 10, you have to break your number down into powers of 2, and then assign 1's and 0's to the appropriate place values. 
+
+For example, 
+\[77_{10} = 64 + 8 + 4 + 1 = 1*64 + 0*32 + 0*16 + 1*8 + 1*4 + 0*2 + 1*1 = 100101_2 \]
+
+\vspace{0.2in}
+
+To break a number down into powers of two, you should repeat the following two steps, until you are left with 0:\newline
+\begin{enumerate}
+\item  find the largest power of two that fits into that number,
+\item subtract off that power of two from the original number.
+\end{enumerate}
+
+\vspace{0.2in}
+
+Going back to the last example:
+\begin{itemize}
+\item[] the largest power of 2 that fits into 77 is $2^6=64$
+\item[] 77-64 = 13, so repeat steps (1) and (2) with 13:
+\item[] the largest power of 2 that fits into 13 is $2^3=8$
+\item[] 13-8 = 5, so repeat steps (1) and (2) with 5:
+\item[] the largest power of 2 that fits into 5 is $2^2=4$
+\item[]  5-4 = 1
+\end{itemize}
+
+\vspace{0.3in}
+
+Convert the following base 10 numbers into binary:
+
+\vspace{0.3in}
+
+$67_{10}$
+
+\vfill
+
+$127_{10}$
+
+\vfill
+
+\newpage
+
+
+\noindent\textbf{Hexadecimal}\newline
+
+
+\noindent\textbf{How Hexadecimal Works}
+
+\vspace{0.3in}
+
+We've already talked about why binary is so nicely compatible with computers, but there is also a major con to binary: it takes a lot of characters to write one number! As we saw, the number 77 in base 10 takes 7 digits to write in binary. Hex was developed precisely to overcome this problem. A number in hex usually takes \textit{fewer} digits than its equivalent base 10 number. 
+
+Hex is base sixteen instead of base two or ten. This means it has sixteen digits, and the place values are all powers of 16. Of course, we only have 10 digits that we normally work with, so to create a system with sixteen digits, we use the letters A, B, C, D, E and F as the other six digits.
+
+Here are the first fifteen numbers in all three number systems that we are discussing:
+
+\vspace{0.2in}
+
+\begin{center}
+\begin{tabular}{lll}
+decimal & binary & hex \\
+0 & 0 & 0 \\
+1 & 1 & 1 \\
+2 & 10 & 2 \\
+3 & 11 & 3 \\
+4 & 100 & 4 \\
+5 & 101 & 5 \\
+6 & 110 & 6 \\
+7 & 111 & 7 \\
+8 & 1000 & 8 \\
+9 & 1001 & 9 \\
+10 & 1010 & A \\
+11 & 1011 & B \\
+12 & 1100 & C \\
+13 & 1101 & D \\
+14 & 1110 & E \\
+15 & 1111 & F \\
+\end{tabular}
+\end{center}
+ 
+\vspace{0.3in}
+
+When we count in hexadecimal, we start from zero and have `0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F'.  We then run out of digits, so we must add another column! The next number in hex is $10_{16}$ which has a base 10 value of 16! Now lets write out the next several hexadecimal numbers:
+
+\vspace{0.3in}
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, 10 \rule{1in}{.01in}, \rule{1in}{.01in},  \rule{1in}{.01in},  \newline
+
+\vspace{0.3in}
+
+\rule{1in}{.01in}, \rule{1in}{.01in},  \rule{1in}{.01in},  \rule{1in}{.01in}, \rule{1in}{.01in},  \rule{1in}{.01in},\newline
+
+\vspace{0.3in}
+
+\rule{1in}{.01in}, \rule{1in}{.01in},  \rule{1in}{.01in},  \rule{1in}{.01in}, \rule{1in}{.01in},  \rule{1in}{.01in},\newline
+
+\vspace{0.3in}
+
+\rule{1in}{.01in}, \rule{1in}{.01in},  \rule{1in}{.01in},  \rule{1in}{.01in}, \rule{1in}{.01in},  \rule{1in}{.01in},\newline
+
+\newpage
+
+  
+\noindent\textbf{Converting Between Binary, Hex and Base 10}
+
+\vspace{0.3in}
+
+The process of going from hex to base 10 is similar to the process of converting binary to base 10: we multiply the value of each digit by its place value and then sum them up. Since the place values are powers of 16, we should compute a few powers of 16 in order to know their values:
+\begin{itemize}
+\item[] $16^0=1$
+\item[] $16^1=16$
+\item[] $16^2=256$
+\item[] $16^3=4096$
+\end{itemize}
+
+Therefore, 
+
+\[BCD_{16} = 11*256 + 12*16 + 13*1 = 3,021_{10}.\]
+
+Let's convert these next two hex numbers into base 10 as well, using the same method:
+
+\vspace{0.3in}
+
+$A2F_{16}$
+
+\vfill
+
+$12_{16}$
+
+\vfill
+
+\newpage
+
+Okay, these numbers are pretty weird. Why do computer scientists use hex, and not something like base 20 if they want to write numbers in a more compact manner?
+
+The answer lies in the conversions between binary and hex. Since $16=2^4$, each hexadecimal digit is worth four binary digits. Say you want to convert 8F in hex to binary. Then write 8 and F as 4-digit binary numbers: 8=1000, F=1111. Then 
+\[8F_{16}=10001111_2,\]
+the concatenation of these two 4-digit numbers.
+
+On the last page, we converted the following two numbers to base 10 from hex; now we'll convert them to binary using the method just described:
+
+\vspace{0.3in}
+
+$A2F_{16}$
+
+\vspace{2in}
+
+$12_{16}$
+
+\vspace{2in}
+
+To go from hex to binary, we break the binary number into chunks of 4 digits (adding zeros at the beginning if necessary), and convert each 4-digit chunk into its hex equivalent. For example, $110101_2 = 00110101_2$; Ive added two zeros at the beginning so that we can divide the number into two 4-digit blocks. Since 0011 = 3 and 0101=5, we have
+\[110101_2 = 35_{16}.\]
+
+Let's run through one more example:
+
+\vspace{0.3in}
+
+1011111
+
+\vfill
+
+\newpage
+
+
+\noindent\textbf{Exercises}
+
+\vspace{0.2in}
+
+\begin{enumerate}
+\item Simplify each of the following expressions. Express your answer as a power of 2. If your exponent is negative, express your answer as a fraction.
+\begin{enumerate}
+\item $2^{10}\cdot 2^{25}$
+
+\vfill
+
+\item $4^5$
+
+\vfill
+
+\item $2^{10}/ 2^2$
+
+\vfill
+
+\item $2^{10}/ 2^{11}$
+
+\vfill
+
+\item $2^{-7}$
+
+\vfill
+
+\item $2^5+2^5$
+
+\vfill
+
+\item $10^7/5^7$
+
+\vfill
+
+\end{enumerate}
+
+\newpage
+
+\item Convert the following decimal numbers to binary:
+\begin{enumerate}
+\item $2$
+
+\vfill
+
+\item $8$
+
+\vfill
+
+\item $19$
+
+\vfill
+
+\item $1000$
+
+\vfill
+
+\end{enumerate}
+
+\item Convert the following binary numbers to decimal:
+\begin{enumerate}
+\item $1111$
+
+\vfill
+
+\item $101010101$
+
+\vfill
+
+\item $1100$
+
+\vfill
+
+\item $101$
+
+\vfill
+\end{enumerate}
+
+\newpage
+
+\item Convert the following decimal numbers to hex:
+\begin{enumerate}
+\item $2$
+
+\vfill
+
+\item $12$
+
+\vfill
+
+\item $19$
+
+\vfill
+
+\item $1000$
+
+\vfill
+
+\end{enumerate}
+
+\item Convert the following hex numbers to decimal:
+\begin{enumerate}
+\item $111$
+
+\vfill
+
+\item $ACE$
+
+\vfill
+
+\item $1F$
+
+\vfill
+\end{enumerate}
+
+\end{enumerate}
+
+\newpage
+
+\noindent\textbf{Answers}
+
+\vspace{0.2in}
+
+\begin{enumerate}
+\item 
+\begin{enumerate}
+\item $2^{10}\cdot 2^{25}=3^{35}$
+\item $4^5=\left(2^2\right)^5=2^{10}$
+\item $2^{10}/ 2^2=2^{10-2}=2^8$
+\item $2^{10}/ 2^{11}=2^{10-11}=2^{-1}=\frac12$
+\item $2^{-7}=\frac{1}{2^7}$
+\item $2^5+2^5=2\cdot2^5=2^6$
+\item $10^7/5^7=(2\cdot5)^7/5^7=\left(2^75^7\right)/5^7=2^7$
+\end{enumerate}
+\item In these solutions, the subscripts indicate which base the numbers are written in
+\begin{enumerate}
+\item $2_{10}=10_{2}$
+\item $8_{10}=1000_{2}$
+\item $19_{10}=10011_{2}$
+\item $1000_{10}=1111101000_2$
+\end{enumerate}
+\item
+\begin{enumerate}
+\item $1111_2=15_{10}$
+\item $101010101_2=341_{10}$
+\item $1100_2=12_{10}$
+\item $101_2=5_{10}$
+\end{enumerate}
+\item
+\begin{enumerate}
+\item $2_{10}=2_{16}$
+\item $12_{10}=C$
+\item $19_{10}=13$
+\item $1000_{10}=3E8$
+\end{enumerate}
+\item 
+\begin{enumerate}
+\item $111_{16}=273_{10}$
+\item $ACE_{16}=2766_{10}$
+\item $1F_{16}=31_{10}$
+\end{enumerate}
+\end{enumerate}
+
+
+
+\end{document}

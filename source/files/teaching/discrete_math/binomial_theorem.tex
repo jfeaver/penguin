@@ -1,0 +1,83 @@
+
+
+\documentclass{article}
+\usepackage{fullpage, amsmath}
+\pagestyle{empty}
+
+\begin{document}
+
+\textwidth = 6.5in
+\textheight = 9.7in
+\oddsidemargin = 0.0in
+\evensidemargin = 0.0in
+\topmargin = 0.0in
+\headheight = -0.45in
+\headsep = 0.0in
+\parskip = 0.2in
+\parindent = 0.0in
+
+\pagestyle{empty}
+
+
+\centerline{Lab 4}
+
+\noindent\rule{6.7in}{0.01in}
+
+\vspace{0.2in}
+
+The \textit{binomial theorem} gives a way to expand out an expression of the form $(a+b)^n$:
+\[(a+b)^n=\sum_{k=0}^n\binom{n}{k}a^{n-k}b^k.\]
+
+For example, if we wanted to expand the polynomial $(x+2)^3$ we could apply the binomial theorem and find that
+\begin{align*}
+(x+2)^3 &= \binom{3}{0}x^32^0+\binom{3}{1}x^22^1+\binom{3}{2}x^12^2+\binom{3}{3}x^02^3 \\
+&= 1x^32^0+3x^22^1+3x^12^2+1x^02^3 \\
+&= x^3+6x^2+12x+8. \\
+\end{align*}
+
+
+Use the binomial theorem to answer the following questions. This lab is broken into a group portion (worth 4 points) and an individual portion (worth 6 points).
+
+
+\noindent\textbf{Group Questions:} Hand the solutions in for these questions by the end of the lab period.
+\begin{enumerate}
+
+\item (1/2 point) Expand $(x+y)^5$. What is the degree of this polynomial?
+
+\vspace{0.2in}
+
+\item (1/2 point) What is the coefficient of $x^{101}y^{99}$ in the expansion of $(2x-3y)^{200}?$
+
+\vspace{0.2in}
+
+\item (1 point) Give a formula for the coefficient of $x^k$ in the expansion of $(x+1/x)^{100}$, where $k$ is an integer.
+
+\vspace{0.2in}
+
+\item (2 points) Prove the binomial theorem using mathematical induction. 
+
+\end{enumerate}
+
+\vspace{0.5in} 
+
+\noindent\textbf{Individual Questions:} On back. Due in two weeks.
+
+\newpage
+
+\noindent\textbf{Individual Questions:} 
+
+\begin{enumerate}
+
+\item (2 points)  A polynomial in any number of variables is called \textit{homogeneous} if the sums of the exponents on the variables in each term add up to the same number. For example, $x^2+2xy+y^2$ is homogeneous because the exponents on $x$ and $y$ in each term add to 2. For which values of $k$ is $(x+y)^k$ homogeneous? Prove your answer (using full sentences!).
+
+\vspace{0.2in}
+
+\item (1 point) For what values of $k$, if any, is $(x+y+z)^k$ a homogeneous polynomial? When the polynomial is homogeneous, what is the degree of the polynomial? You do not have to prove your answer, just state it.
+
+\vspace{0.2in}
+
+\item (3 points) What is the coefficient of $w^4x^2yz$ in the expansion of $(w+2x+y-z)^8$? You do not need to write a proof, but please explain your answer well.
+
+\end{enumerate}
+
+\end{document}
