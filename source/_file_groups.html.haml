@@ -1,6 +1,6 @@
-- file_groups(dir).each do |name, group_data|
+- file_groups(dir).each do |file_id, group_data|
   %h4= group_data.title
   %ul
     - group_data.exts.each do |ext|
-      %li= link_to_file("#{name}_#{ext}", ext)
+      %li= link_to_file(dir, file_id, ext)
 

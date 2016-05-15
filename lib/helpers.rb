@@ -6,10 +6,9 @@ module Penguin::Helpers
     current_page.data.section == section[0]
   end
 
-  def link_to_file(file_id, content = nil)
-    file = "/files/#{data.files[file_id]}"
-    content ||= File.basename(file)
-    link_to(content, file)
+  def link_to_file(dir, file_id, ext)
+    file = "/files/#{dir}/#{data.filenames[file_id]}.#{ext}"
+    link_to(ext, file)
   end
 
   def file_groups(directory)
