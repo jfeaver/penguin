@@ -5,6 +5,12 @@ $secondary: #7fa998;
 $subtle: #ccc;
 $main-font: black;
 
+// Mixins
+
+@mixin clearfix {
+  overflow: auto;
+}
+
 // Layout
 
 body > .container {
@@ -13,6 +19,27 @@ body > .container {
 
 body {
   font-family: 'Cabin';
+}
+
+dl {
+  @include clearfix;
+  dt {
+    float: left;
+    clear: left;
+    font-weight: bolder;
+    width: 50%;
+    max-width: 200px;
+    min-width: 100px;
+  }
+  dd {
+    float: left;
+    margin-bottom: 0.4em;
+    max-width: 50%;
+  }
+}
+
+.clearfix {
+  @include clearfix;
 }
 
 #logo {
