@@ -15,4 +15,7 @@ sections:
     link:
       - 'Computing'
       - '/computing.html'
-
+  math:
+    link:
+      - 'Math'
+      - '/math.html'
