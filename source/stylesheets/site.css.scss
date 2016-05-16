@@ -83,3 +83,26 @@ dl {
   }
 }
 
+// Homepage
+.welcome-pictures {
+  margin: 2.5em 0 1.5em;
+}
+
+.welcome-pictures-container {
+  width: 95%;
+  margin: auto;
+
+  img {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.find-me {
+  text-align: center;
+}
