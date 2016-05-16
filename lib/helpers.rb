@@ -6,15 +6,17 @@ module Penguin::Helpers
     current_page.data.section == section[0]
   end
 
-  def link_to_file(dir, file_id, ext)
-    file = "/files/#{dir}/#{data.filenames[file_id]}.#{ext}"
-    link_to(ext, file)
+  def link_to_file(ext, directory, filename)
+    link_to(ext, "/files/#{directory}/#{filename}.#{ext}")
   end
 
   def file_groups(directory)
-    directory.split('/').reduce(data.file_groups) do |grouping, directory|
-      grouping[directory]
+    dig_data(directory, data.file_groups)
+  end
+
+  def dig_data(directory, the_data)
+    directory.split('/').reduce(the_data) do |group, subgroup|
+      group[subgroup]
     end
   end
 end
-

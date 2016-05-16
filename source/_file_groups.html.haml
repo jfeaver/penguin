@@ -2,5 +2,4 @@
   %h4= group_data.title
   %ul
     - group_data.exts.each do |ext|
-      %li= link_to_file(dir, file_id, ext)
-
+      %li= link_to_file(ext, dir, group_data[:filename])

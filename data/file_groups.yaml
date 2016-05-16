@@ -2,87 +2,104 @@ teaching:
   data_structures:
     big_o:
       title: 'Big-O Notation'
+      filename: 'Big O'
       exts:
         - pdf
         - tex
     big_o_practice:
       title: 'Big-O Notation Practice'
+      filename: 'Big O Practice'
       exts:
         - pdf
         - tex
     big_o_practice_solutions:
       title: 'Big-O Notation Practice (Solutions)'
+      filename: 'Big O Practice Solutions'
       exts:
         - pdf
   discrete_math:
     binomial_theorem:
       title: 'Binomial Theorem'
+      filename: 'Binomial Theorem'
       exts:
         - pdf
         - tex
     the_sieve_of_eratosthenes:
       title: 'The Sieve of Eratosthenes'
+      filename: 'The Sieve of Eratosthenes'
       exts:
         - pdf
         - tex
   elementary_ed:
     addition_tables:
       title: 'Addition Tables'
+      filename: 'addition tables'
       exts:
         - docx
         - pdf
     base_3_worksheet:
       title: 'Base 3 Worksheet'
+      filename: 'Base 3 Worksheet'
       exts:
         - pdf
         - tex
     divisibility_palindromic_numbers:
       title: 'Divisibility (Palindromic Numbers)'
+      filename: 'Divisibility (Palindromic Numbers)'
       exts:
         - pdf
         - tex
     geometry_true_or_false:
       title: 'Geometry True or False'
+      filename: 'Geometry True of False'
       exts:
         - docx
         - pdf
     normal_curves_with_ducks:
       title: 'Normal Curves with Ducks'
+      filename: 'normal curves with ducks'
       exts:
         - pdf
         - tex
     order_of_operations_four_fours:
       title: 'Order of Operations (Four Fours)'
+      filename: 'Order of Operations (Four Fours)'
       exts:
         - pdf
         - tex
     permutationscombinations:
       title: 'Permutations and Combinations'
+      filename: 'permutationscombinations'
       exts:
         - pdf
         - tex
     polygons:
       title: 'Polygons'
+      filename: 'Polygons'
       exts:
         - docx
         - pdf
     scientific_notation_paper_folding:
       title: 'Scientific Notation (Paper Folding)'
+      filename: 'Scientific Notation (Paper Folding)'
       exts:
         - pdf
         - tex
     stats_with_ducks:
       title: 'Stats with Ducks'
+      filename: 'stats with ducks'
       exts:
         - pdf
         - tex
     the_sieve_of_eratosthenes:
       title: 'The Sieve of Eratosthenes'
+      filename: 'The Sieve of Eratosthenes'
       exts:
         - pdf
         - tex
     understanding_place_values:
       title: 'Understanding Place Values'
+      filename: 'Understanding Place Values'
       exts:
         - pdf
         - tex
@@ -91,27 +108,32 @@ teaching:
     binary_and_hex:
       addition_tables:
         title: 'Addition Tables'
+        filename: 'addition tables'
         exts:
           - docx
           - pdf
       binary_numbers_and_bits:
         title: 'Binary Numbers and Bits'
+        filename: 'Binary Numbers and Bits'
         exts:
           - pdf
           - tex
 
     intro_to_js_functions:
       title: 'Introduction to JavaScript Functions'
+      filename: 'Intro To JS Functions'
       exts:
         - docx
         - pdf
-      js_math_library:
-        title: 'JavaScript Math Library'
-        exts:
-          - docx
-          - pdf
-      truth_tables:
-        title: 'Truth Tables'
-        exts:
-          - docx
-          - pdf
+    js_math_library:
+      title: 'JavaScript Math Library'
+      filename: 'JS Math Library'
+      exts:
+        - docx
+        - pdf
+    truth_tables:
+      title: 'Truth Tables'
+      filename: 'Truth Tables'
+      exts:
+        - docx
+        - pdf
