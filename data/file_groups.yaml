@@ -106,7 +106,7 @@ teaching:
 
   intro_to_computers:
     addition_tables:
-      title: 'Addition Tables'
+      title: 'Binary and Hex Addition Tables'
       filename: 'addition tables'
       exts:
         - docx
