@@ -104,7 +104,7 @@ teaching:
         - pdf
         - tex
 
-  intro_to_comuters:
+  intro_to_computers:
     binary_and_hex:
       addition_tables:
         title: 'Addition Tables'

@@ -1,4 +1,4 @@
-require 'lib/helpers'
+require 'lib/penguin'
 
 ###
 # Page options, layouts, aliases and proxies
