@@ -105,20 +105,18 @@ teaching:
         - tex
 
   intro_to_computers:
-    binary_and_hex:
-      addition_tables:
-        title: 'Addition Tables'
-        filename: 'addition tables'
-        exts:
-          - docx
-          - pdf
-      binary_numbers_and_bits:
-        title: 'Binary Numbers and Bits'
-        filename: 'Binary Numbers and Bits'
-        exts:
-          - pdf
-          - tex
-
+    addition_tables:
+      title: 'Addition Tables'
+      filename: 'addition tables'
+      exts:
+        - docx
+        - pdf
+    binary_numbers_and_bits:
+      title: 'Binary Numbers and Bits'
+      filename: 'Binary Numbers and Bits'
+      exts:
+        - pdf
+        - tex
     intro_to_js_functions:
       title: 'Introduction to JavaScript Functions'
       filename: 'Intro To JS Functions'
