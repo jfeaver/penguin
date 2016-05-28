@@ -5,3 +5,51 @@ section: research
 
 %h1 Research
 
+%p
+  I am interested in algebraic number theory, especially: (multi)quadratic number fields, class numbers, rings of integers and the Euclidean algorithm.
+
+%h2 Publications
+
+.publication-list
+  .publication(itemscope itemtype="https://schema.org/ScholarlyArticle")
+    %span.hidden(itemprop="author") Amy Feaver
+    with
+    = succeed(',') do
+      %span(itemprop="author") Anna Haensch
+    %span(itemprop="author") Jingbo Liu
+    and
+    %span(itemprop="author") Gabi Nebe
+    %br
+    = link_to '/files/publications/hecke.pdf', itemprop: 'url', target: '_blank' do
+      %span(itemprop="headline") Kneser-Hecke-operators for codes over finite chain rings
+    (preprint)
+    %br
+    to appear in the
+    %span.title(itemprop="publication") WIN 3 Proceedings
+    = surround('(', ')') do
+      %span(itemprop="datePublished") 2016
+
+  .publication(itemscope itemtype="https://schema.org/ScholarlyArticle")
+    %span.hidden(itemprop="author") Amy Feaver
+    with
+    = succeed(',') do
+      %span(itemprop="author") Marie-Jose Bertin
+    = succeed(',') do
+      %span(itemprop="author") Jenny Fuselier
+    %span(itemprop="author") Matilde Lalin
+    and
+    %span(itemprop="author") Michelle Manes
+    %br
+    = link_to '/files/publications/mahler.pdf', itemprop: 'url', target: '_blank' do
+      %span(itemprop="headline") Mahler Measure of Some Singular 𝐾3-surfaces
+    %br
+    = succeed(',') do
+      %span(itemprop="publication")
+        Women in numbers 2: research directions in number theory
+    = succeed(',') do
+      %span(itemprop="pageStart")> 149
+      -
+      %span(itemprop="pageStart")> 169
+    %span.title(itemprop="publication") Contemporary Mathematics, 606
+    = surround('(', ')') do
+      %span(itemprop="datePublished") 2013

@@ -106,3 +106,17 @@ dl {
 .find-me {
   text-align: center;
 }
+
+// Research
+.publication {
+  margin: 1.2em 0 0.5em;
+  .title {
+    font-style: italic;
+  }
+}
+
+.book {
+  .title {
+    font-style: italic;
+  }
+}

@@ -5,3 +5,38 @@ section: computing
 
 %h1 Computing
 
+%p
+  I am a supporter of the open source movement, and contribute to (and use!)
+  = succeed('.') do
+    = link_to '//www.sagemath.org', target: '_blank' do
+      Sage mathematics software
+
+%h2 Talks
+
+%p
+  These are some expository computing-related talks I have given for fun!
+
+%ul
+  %li(itemscope itemtype="https://schema.org/CommunicateAction")
+    %span(itemprop="name") What is open source?
+    = surround('(', '),') do
+      %span.month January
+      %span.year 2016
+    %span(itemprop="recipient") Faculty Colloquium
+    at
+    %span(itemprop="location") The King’s University
+
+%h2 Books
+
+%p
+  Below is a list books I have read.
+
+%ul.books-list
+  %li.book(itemscope itemtype="https://schema.org/Book")
+    %span.title(itemprop="headline") The Joy of Missing Out: Finding Balance in a Wired World
+    by
+    %span(itemprop="author") Christina Crook
+  %li.book(itemscope itemtype="https://schema.org/Book")
+    %span.title(itemprop="headline") The Code Book
+    by
+    %span(itemprop="author") Simon Singh
