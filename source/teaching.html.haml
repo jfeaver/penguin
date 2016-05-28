@@ -13,43 +13,71 @@ section: teaching
 %h2 Regularly Taught Courses at The King’s University
 
 %dl
-  %dt= link_to('Introduction to Computers', '/teaching/intro_to_computers')
-  %dd
-    Taught every fall semester. HTML, JavaScript, recursion, truth tables, history, and impacts of technology on society.
-  %dt= link_to('Data Structures', '/teaching/data_structures')
-  %dd
-    Taught every spring semester. C++ programming, pointers, arrays, linked lists, binary trees, stacks queues, and other data
-    structures.
-  %dt= link_to('Discrete Math', '/teaching/discrete_math')
-  %dd
-    Taught fall semester of odd years.
-  %dt Cryptography
-  %dd
-    Taught spring semester of even years. Python 3 programming, RSA, Diffie-Helman, ElGamal, elliptic curve cryptography,
-    historical ciphers, the enigma machine.
-  %dt Numerical Analysis
-  %dd Taught fall semester of even years.
-  %dt Theory of Computing
-  %dd Taught spring semester of odd years.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      = link_to '/teaching/intro_to_computers' do
+        %span(itemprop="name") Introduction to Computers
+    %dd(itemprop="description")
+      Taught every fall semester. HTML, JavaScript, recursion, truth tables, history, and impacts of technology on society.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      = link_to '/teaching/data_structures' do
+        %span(itemprop="name") Data Structures
+    %dd(itemprop="description")
+      Taught every spring semester. C++ programming, pointers, arrays, linked lists, binary trees, stacks queues, and other data
+      structures.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      = link_to '/teaching/discrete_math' do
+        %span(itemprop="name") Discrete Math
+    %dd(itemprop="description")
+      Taught fall semester of odd years.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      %span(itemprop="name") Cryptography
+    %dd(itemprop="description")
+      Taught spring semester of even years. Python 3 programming, RSA, Diffie-Helman, ElGamal, elliptic curve cryptography,
+      historical ciphers, the enigma machine.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      %span(itemprop="name") Numerical Analysis
+    %dd(itemprop="description") Taught fall semester of even years.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      %span(itemprop="name") Theory of Computing
+    %dd(itemprop="description") Taught spring semester of odd years.
 
 %h2 Other Courses
 
 %dl
-  %dt Abstract Algebra
-  %dd A reading course co-taught with Remkes Kooistra at The King's University, summer 2016.
-  %dt= link_to 'Math for Elementary Education', '/teaching/elementary_ed.html'
-  %dd
-    I taught this frequently (7 semesters total) as a graduate student at the University of Colorado.
-    %em Course Coordinator
-    \- spring 2011 and fall 2012.
-  %dt Quantitative Reasoning
-  %dd University of Colorado, summer 2010.
-  %dt Calculus II
-  %dd University of Colorado, spring 2009 and fall 2011.
-  %dt Calculus I
-  %dd University of Colorado, summer 2008.
-  %dt Introduction to Robotics
-  %dd The Johns Hopkins University Center for Talented Youth, summer 2009.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      %span(itemprop="name") Abstract Algebra
+    %dd(itemprop="description") A reading course co-taught with Remkes Kooistra at The King's University, summer 2016.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      = link_to '/teaching/elementary_ed.html' do
+        %span(itemprop="name") Math for Elementary Education
+    %dd(itemprop="description")
+      I taught this frequently (7 semesters total) as a graduate student at the University of Colorado.
+      %em Course Coordinator
+      \- spring 2011 and fall 2012.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      %span(itemprop="name") Quantitative Reasoning
+    %dd(itemprop="description") University of Colorado, summer 2010.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      %span(itemprop="name") Calculus II
+    %dd(itemprop="description") University of Colorado, spring 2009 and fall 2011.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      %span(itemprop="name") Calculus I
+    %dd(itemprop="description") University of Colorado, summer 2008.
+  .course(itemscope itemtype="http://schema.org/Course")
+    %dt
+      %span(itemprop="name") Introduction to Robotics
+    %dd(itemprop="description") The Johns Hopkins University Center for Talented Youth, summer 2009.
 
 %p
   I have also helped with math intervention at Pioneer Elementary School in
@@ -59,4 +87,3 @@ section: teaching
   \ – 8
   %sup> th
   \ grade students.
-
