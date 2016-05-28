@@ -1,5 +1,7 @@
+require 'lib/penguin/helpers/schema_tag_helper'
+
 module Penguin
-  module Helpers
+  module MiscHelpers
     def active_section?(current_page, section)
       current_page.data.section == section[0]
     end
@@ -17,5 +19,10 @@ module Penguin
         group[subgroup]
       end
     end
+  end
+
+  module Helpers
+    include MiscHelpers
+    include SchemaTagHelper
   end
 end
