@@ -22,9 +22,9 @@ section: computing
     = surround('(', '),') do
       %span.month January
       %span.year 2016
-    %span(itemprop="recipient") Faculty Colloquium
-    at
-    %span(itemprop="location") The King’s University
+    %span(itemprop="recipient" itemscope itemtype="http://schema.org/Organization")
+      Faculty Colloquium at
+      %span(itemprop="name") The King’s University
 
 %h2 Books
 
@@ -35,8 +35,8 @@ section: computing
   %li.book(itemscope itemtype="http://schema.org/Book")
     %span.title(itemprop="headline") The Joy of Missing Out: Finding Balance in a Wired World
     by
-    %span(itemprop="author") Christina Crook
+    = author_tag('Christina Crook')
   %li.book(itemscope itemtype="http://schema.org/Book")
     %span.title(itemprop="headline") The Code Book
     by
-    %span(itemprop="author") Simon Singh
+    = author_tag('Simon Singh')
