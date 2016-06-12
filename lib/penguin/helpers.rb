@@ -7,7 +7,18 @@ module Penguin
     end
 
     def link_to_file(ext, directory, filename)
-      link_to(ext, "/files/#{directory}/#{filename}.#{ext}")
+      link_to(ext, "#{config[:base_href]}files/#{directory}/#{filename}.#{ext}")
+    end
+
+    def link_to_section(section)
+      content = section[1].link[0]
+      href = section[1].link[1]
+      case href
+      when 'index'
+        link_to(content, 'index.html', relative: true)
+      else
+        link_to(content, href)
+      end
     end
 
     def file_category(directory)

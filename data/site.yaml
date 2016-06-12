@@ -2,20 +2,20 @@ sections:
   home:
     link:
       - 'Home'
-      - '/index.html'
+      - 'index'
   research:
     link:
       - 'Research'
-      - '/research.html'
+      - 'research'
   teaching:
     link:
       - 'Teaching'
-      - '/teaching.html'
+      - 'teaching'
   computing:
     link:
       - 'Computing'
-      - '/computing.html'
+      - 'computing'
   math:
     link:
       - 'Math'
-      - '/math.html'
+      - 'math'
