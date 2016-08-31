@@ -26,12 +26,21 @@ section: computing
       Faculty Colloquium at
       %span(itemprop="name") The King’s University
 
+%h2 Code
+
+= link_to "#{config[:base_href]}files/code/benford_integers.py" do
+  Benford distribution checker (2013)
+
 %h2 Books
 
 %p
-  Below is a list books I have read.
+  Below is a list books I have read (most recent first).
 
 %ul.books-list
+  %li.book(itemscope itemtype="http://schema.org/Book")
+    %span.title(itemprop="headline") Shaping a Digital World
+    by
+    = author_tag('Derek Schuurman')
   %li.book(itemscope itemtype="http://schema.org/Book")
     %span.title(itemprop="headline") The Joy of Missing Out: Finding Balance in a Wired World
     by
