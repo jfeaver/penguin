@@ -21,6 +21,13 @@ page '/*.txt', layout: false
 # General configuration
 
 activate :directory_indexes
+activate :deploy do |deploy|
+  deploy.deploy_method = :rsync
+  deploy.host          = 'turing.kingsu.ca'
+  deploy.path          = '~/public_html'
+  # Optional Settings
+  deploy.user  = 'afeaver'
+end
 
 # Reload the browser automatically whenever files change
 configure :development do
