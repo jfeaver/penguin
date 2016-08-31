@@ -6,7 +6,7 @@ module Penguin
       current_page.data.section == section[0]
     end
 
-    def link_to_file(ext, directory, filename)
+    def link_to_file(ext, directory, filename, options = {})
       link_to(ext, "#{config[:base_href]}files/#{directory}/#{filename}.#{ext}")
     end
 
@@ -15,7 +15,7 @@ module Penguin
       href = section[1].link[1]
       case href
       when 'index'
-        link_to(content, 'index.html', relative: true)
+        link_to(content, config[:base_href])
       else
         link_to(content, href)
       end

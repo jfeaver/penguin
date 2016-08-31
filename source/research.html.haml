@@ -19,15 +19,15 @@ section: research
     and
     = author_tag('Gabi Nebe')
     %br
-    = link_to 'files/publications/hecke.pdf', itemprop: 'url', target: '_blank' do
+    = link_to "#{config[:base_href]}files/publications/hecke.pdf", itemprop: 'url', target: '_blank' do
       %span(itemprop="headline") Kneser-Hecke-operators for codes over finite chain rings
     (preprint)
     %br
     to appear in the
     %span.title(itemprop="publication") WIN 3 Proceedings
     = surround('(', ')') do
-      %span(itemprop="datePublished")
-        %meta(itemprop="datePublished" content="2016-12-31")
+      %span(itemprop="datePublished")<
+        %meta(itemprop="datePublished" content="2016-12-31")>
         2016
 
   .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
@@ -41,7 +41,7 @@ section: research
     and
     = author_tag('Michelle Manes')
     %br
-    = link_to 'files/publications/mahler.pdf', itemprop: 'url', target: '_blank' do
+    = link_to "#{config[:base_href]}files/publications/mahler.pdf", itemprop: 'url', target: '_blank' do
       %span(itemprop="headline") Mahler Measure of Some Singular 𝐾3-surfaces
     %br
     = succeed(',') do
@@ -53,6 +53,44 @@ section: research
       %span(itemprop="pageStart")> 169
     %span.title(itemprop="publication") Contemporary Mathematics, 606
     = surround('(', ')') do
-      %span(itemprop="datePublished")
-        %meta(itemprop="datePublished" content="2013-12-31")
+      %span(itemprop="datePublished")<
+        %meta(itemprop="datePublished" content="2013-12-31")>
         2013
+
+%h2 Other Resources
+.publication-list
+  .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
+    = link_to "#{config[:base_href]}files/resources/integral_bases_of_number_fields_composed_of_quadratic_extensions_of_Q.pdf", itemprop: 'url', target: '_blank' do
+      A translation of
+      %span(itemprop="headline") Bases des entiers des corps composes par des extensions quadratiques de Q
+    by
+    = author_tag('D. Chatelain')
+    = surround('(', ')') do
+      %span(itemprop="datePublished")<
+        %meta(itemprop="datePublished" content="1973-12-31")>
+        1973
+
+  .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
+    = link_to "#{config[:base_href]}files/resources/inkeri.pdf", itemprop: 'url', target: '_blank' do
+      A typesetting of
+      %span(itemprop="headline") Non-homogeneous binary quadratic forms
+    by
+    = author_tag('K. Inkeri')
+    = surround('(', '),') do
+      %span(itemprop="datePublished")<
+        %meta(itemprop="datePublished" content="1949-12-31")>
+        1949
+    because I found scanned copies of the article and the older notation difficult to read
+
+  .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
+    = link_to "#{config[:base_href]}files/publications/lattices-haar_measures-unipotent_elements.pdf", itemprop: 'url', target: '_blank' do
+      %span(itemprop="headline") Lattices, Haar measures, unipotent elements
+    = author_tag('Amy Feaver', class: 'hidden')
+    (with
+    = succeed('):') do
+      = author_tag('J. Medkova')
+    our contribution to the Apollonian circle packings handbook for an ACP workshop at the Institut Mittag-Leffler
+    = surround('(', ')') do
+      %span(itemprop="datePublished")<
+        %meta(itemprop="datePublished" content="2014-12-31")>
+        2014
