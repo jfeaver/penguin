@@ -6,11 +6,11 @@ section: computing
 %h1 Stylometry (2015/2016)
 
 %p
-  = link_to 'An Introduction to Stylometry', 'computing/student_projects/stylometry/stylometry_report.pdf', target: '_blank'
+  = link_to 'An Introduction to Stylometry', "#{config[:base_href]}computing/student_projects/stylometry/stylometry_report.pdf", target: '_blank'
   by Nathaniel Latta
 
 %p
-  = link_to 'Python 3 code for letter and word frequency analysis, and more!', 'computing/student_projects/stylometry/frequency_counter.py', target: '_blank'
+  = link_to 'Python 3 code for letter and word frequency analysis, and more!', "#{config[:base_href]}computing/student_projects/stylometry/frequency_counter.py", target: '_blank'
   %br
   This code counts the frequency of each letter and word in a given text, and counts the number of appearances of specific
   phrases as well. It can also be used in a rudimentary way to help crack a substitution cipher, and gives suggestions for
@@ -21,5 +21,5 @@ section: computing
 %img#stylometry-expected-frequency-chart(src='computing/student_projects/stylometry/expected_frequency.png' alt='Expected letter frequencies in the English language chart (in pink!)')
 
 %p
-  = link_to 'Expected letter frequencies in the English language', 'computing/student_projects/stylometry/expected_frequency.txt', target: '_blank'
+  = link_to 'Expected letter frequencies in the English language', "#{config[:base_href]}computing/student_projects/stylometry/expected_frequency.txt", target: '_blank'
   (from Wikipedia)
