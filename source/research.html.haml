@@ -10,7 +10,16 @@ section: research
 
 %h2 Publications
 .publication-list
-  .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
+
+  .publication.research-item(itemscope itemtype="http://schema.org/ScholarlyArticle")
+    = author_tag('Amy Feaver', class: 'hidden')
+    = link_to("https://arxiv.org/abs/1608.04419", itemprop: 'url', target: '_blank') do
+      %span(itemprop="headline") Imaginary Multiquadratic Fields of Class Number 1
+    %br
+    Accepted for publication,
+    %span.title(itemprop="publication") Journal of Number Theory
+
+  .publication.research-item(itemscope itemtype="http://schema.org/ScholarlyArticle")
     = author_tag('Amy Feaver', class: 'hidden')
     with
     = succeed(',') do
@@ -23,14 +32,15 @@ section: research
       %span(itemprop="headline") Kneser-Hecke-operators for codes over finite chain rings
     (preprint)
     %br
-    to appear in the
-    %span.title(itemprop="publication") WIN 3 Proceedings
+    %span.title(itemprop="publication") Directions in Number Theory: Proceedings of the 2014 WIN3 Workshop
+    %br
+    %span(itemprop="publisher") Springer
     = surround('(', ')') do
       %span(itemprop="datePublished")<
         %meta(itemprop="datePublished" content="2016-12-31")>
         2016
 
-  .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
+  .publication.research-item(itemscope itemtype="http://schema.org/ScholarlyArticle")
     = author_tag('Amy Feaver', class: 'hidden')
     with
     = succeed(',') do
@@ -57,9 +67,78 @@ section: research
         %meta(itemprop="datePublished" content="2013-12-31")>
         2013
 
+
+%h2 Invited Research Talks:
+
+.talks
+  .talk.research-item
+    %span.title Euclidean n-quadratic fields
+    %br
+    Canadian Mathematical Society Summer Meeting, Session on Analytic number theory and Diophantine equations, University of Alberta, Edmonton, AB
+    %br
+    June 2016
+
+  .talk.research-item
+    %span.title Kneser-Hecke operators for codes over finite chain rings
+    (Plenary Lecture)
+    %br
+    Alberta number theory days, Banff International Research Station, Banff, AB
+    %br
+    April 2016
+
+  .talk.research-item
+    %span.title The Euclidean algorithm and class numbers of multiquadratic number fields
+    %br
+    University of Hawaii, Honolulu,HI
+    %br
+    February 2016
+
+  .talk.research-item
+    %span.title Sage mathematics software and the Euclidean algorithm
+    %br
+    Lethbridge number theory and combinatorics seminar, University of Lethbridge, Lethbride, AB
+    %br
+    September 2015
+
+  .talk.research-item
+    %span.title Euclid's algorithm in multiquadratic number fields
+    %br
+    AMMCS-CAIMS congress, Wilfrid Laurier University, Waterloo, ON
+    %br
+    June 2015
+
+  .talk.research-item
+    %span.title A theorem on norm-Euclidean rings of integers
+    %br
+    Alberta Math Dialogue, University of Lethbridge, Lethbridge, AB
+    %br
+    May 2016
+
+  .talk.research-item
+    %span.title Lattices, Haar measures, unipotent elements (joint with J. Medkova)
+    %br
+    6th European Women in Mathematics Summer School: Apollonian Circle Packings, Institut Mittag-Leffler, Sweden
+    %br
+    June 2014
+
+  .talk.research-item
+    %span.title Norm-Euclidean multiquadratic fields
+    %br
+    AMS Sectional Meeting, Special Session on Number Theory with a Focus on Diophantine Equations and Recurrence Sequences, University of Colorado, Boulder, CO
+    %br
+    April 2013
+
+  .talk.research-item
+    %span.title Mahler Measure of some K3-surfaces (joint with J. Fuselier, M. Manes)
+    %br
+    Women in Numbers 2, Banff International Research Station, Banff, AB
+    %br
+    November 2011
+
+
 %h2 Other Resources
-.publication-list
-  .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
+.publication.research-item-list
+  .publication.research-item(itemscope itemtype="http://schema.org/ScholarlyArticle")
     = link_to "#{config[:base_href]}files/resources/integral_bases_of_number_fields_composed_of_quadratic_extensions_of_Q.pdf", itemprop: 'url', target: '_blank' do
       A translation of
       %span(itemprop="headline") Bases des entiers des corps composes par des extensions quadratiques de Q
@@ -70,7 +149,7 @@ section: research
         %meta(itemprop="datePublished" content="1973-12-31")>
         1973
 
-  .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
+  .publication.research-item(itemscope itemtype="http://schema.org/ScholarlyArticle")
     = link_to "#{config[:base_href]}files/resources/inkeri.pdf", itemprop: 'url', target: '_blank' do
       A typesetting of
       %span(itemprop="headline") Non-homogeneous binary quadratic forms
@@ -82,7 +161,7 @@ section: research
         1949
     because I found scanned copies of the article and the older notation difficult to read
 
-  .publication(itemscope itemtype="http://schema.org/ScholarlyArticle")
+  .publication.research-item(itemscope itemtype="http://schema.org/ScholarlyArticle")
     = link_to "#{config[:base_href]}files/publications/lattices-haar_measures-unipotent_elements.pdf", itemprop: 'url', target: '_blank' do
       %span(itemprop="headline") Lattices, Haar measures, unipotent elements
     = author_tag('Amy Feaver', class: 'hidden')

@@ -109,7 +109,7 @@ dl {
 }
 
 // Research
-.publication {
+.research-item {
   margin: 1.2em 0 0.5em;
   .title {
     font-style: italic;
@@ -126,4 +126,11 @@ dl {
 #stylometry-expected-frequency-chart {
   max-width: 800px;
   width: 100%;
+}
+
+.icon {
+  &.pdf {
+    vertical-align: baseline;
+    height: 12px;
+  }
 }

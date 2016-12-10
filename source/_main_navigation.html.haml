@@ -3,3 +3,7 @@
     - data.site.sections.each do |section|
       %li{ class: (active_section?(current_page, section) ? 'active' : nil) }
         = link_to_section(section)
+    %li
+      = link_to("#{config[:base_href]}files/resources/CV.pdf", target: '_blank') do
+        CV
+        %img.icon.pdf(src='images/pdf_icon.png')
